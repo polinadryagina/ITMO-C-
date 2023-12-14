@@ -5,7 +5,7 @@ class Test
 {
     static void Main()
     {
-        Console.WriteLine(Test(
+        Console.WriteLine(TestCode(
                             new string[] {
                                 "> 3",
                                 "@: +",
@@ -30,7 +30,7 @@ class Test
                                 "[#5] = 80"
                             }
         ));
-        Console.WriteLine(Test(
+        Console.WriteLine(TestCode(
                             new string[] {
                                 "> 5",
                                 "@: *",
@@ -59,7 +59,7 @@ class Test
         ));
     }
     
-    static bool Test(string[] inputs, string[] output) {
+    static bool TestCode(string[] inputs, string[] output) {
         var history = new List<double>();
         double current = 0;
         string input;
