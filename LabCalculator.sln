@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorWeb", "CalculatorWeb\CalculatorWeb.csproj", "{FAE98100-8487-4FA5-A739-BDAF8482A190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorLab", "CalculatorLab\CalculatorLab.csproj", "{BBC4C3E0-037F-4BF3-9D03-13BA9341AE03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorAvalona", "CalculatorAvalona\CalculatorAvalona.csproj", "{9C3B80DC-06B6-4C93-8E92-E1E66713D498}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FAE98100-8487-4FA5-A739-BDAF8482A190}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAE98100-8487-4FA5-A739-BDAF8482A190}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAE98100-8487-4FA5-A739-BDAF8482A190}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAE98100-8487-4FA5-A739-BDAF8482A190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC4C3E0-037F-4BF3-9D03-13BA9341AE03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC4C3E0-037F-4BF3-9D03-13BA9341AE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC4C3E0-037F-4BF3-9D03-13BA9341AE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC4C3E0-037F-4BF3-9D03-13BA9341AE03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3B80DC-06B6-4C93-8E92-E1E66713D498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3B80DC-06B6-4C93-8E92-E1E66713D498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3B80DC-06B6-4C93-8E92-E1E66713D498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3B80DC-06B6-4C93-8E92-E1E66713D498}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

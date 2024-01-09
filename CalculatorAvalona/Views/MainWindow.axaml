@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CalculatorAvalona.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="300"
+        x:Class="CalculatorAvalona.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Калькулятор"
+        Width="400" Height="300"
+        CanResize="False"
+        WindowStartupLocation="CenterScreen"
+        Background="DarkGray">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя часть: ListBox для лога операций -->
+        <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
+            <ListBox Name="ListBox" ItemsSource="{Binding LogEntries}" MinHeight="200" Background="Gray">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Foreground="{Binding Color}" Text="{Binding Text}" Background="Beige"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </ScrollViewer>
+
+        <!-- Средняя часть: Поле ввода и кнопка выполнения -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+            <TextBox x:Name="InputBox" Width="200" KeyDown="InputBox_KeyDown" Background="Black" />
+            <Button Content="Выполнить" Click="ExecuteCommand" Margin="5,0,0,0" Background="Black" />
+        </StackPanel>
+
+        <!-- Нижняя часть: Может быть использована для дополнительных функций или информации -->
+    </Grid>
+</Window>
